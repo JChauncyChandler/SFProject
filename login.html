@@ -18,7 +18,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="CSS/Login.css" />
     <script>
         $(document).ready(function () {
             $("#login").hide();
@@ -32,36 +32,6 @@
         });
                    
     </script>
-    <style>
-        .container{
-            width: 50%;
-            margin-top: 5%;
-        }
-        .jumbotron{
-            margin-left: auto;
-            margin-right: auto;
-            width: 75%;
-            opacity: 0.9;
-        }
-        body {
-            
-            background-color: #1b3d6e;
-            
-        }
-        .mem{
-           
-            opacity: 0.3;
-        }
-        .memlogo {
-            width: 500px;
-            height: 250px;
-            margin-left: 22%;
-            margin-right: 20%;
-            border: 15px solid black;
-        }
-        
-    </style>
-
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -84,11 +54,19 @@
                 <h3>Signu Up</h3>
                 <form>
                     <div class="form-group">
+                        <label for="pwd">First Name:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
                         <label for="email">Email address:</label>
                         <input type="email" class="form-control" id="email">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Password:</label>
+                        <label for="email">Confirm Email address:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Last Name:</label>
                         <input type="password" class="form-control" id="pwd">
                     </div>
                     <div class="form-group">
@@ -96,11 +74,7 @@
                         <input type="password" class="form-control" id="pwd">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
+                        <label for="pwd">Confirm Password:</label>
                         <input type="password" class="form-control" id="pwd">
                     </div>
                     
